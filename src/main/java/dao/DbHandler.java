@@ -5,7 +5,7 @@ import java.sql.*;
 public class DbHandler {
     //variables
     public static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    public static String DB_URL = "jdbc:mysql://localhost/store";
+    public static String DB_URL = "jdbc:mysql://localhost:3306/store";
     public static String username = "root";
     public static String password = "";
 
@@ -62,7 +62,7 @@ public class DbHandler {
         stmt = conn.createStatement();
         rst = stmt.executeQuery(query);
         /**
-        while (rst.next())
+         while (rst.next())
          System.out.println(rst.getInt(1) + " " + rst.getString(2) + " " + rst.getString(3));
          if (conn!=null) {
          conn.close();
@@ -76,7 +76,6 @@ public class DbHandler {
         return rst;
     }
     //Using Prepared Statement
-
 
 
 }

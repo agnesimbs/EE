@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ReceivedBean implements BeanInterface {
+public class ReceivedBean implements BeanInterface{
     public Boolean addReceiving(Received received) throws SQLException {
         String sql = "INSERT INTO received(batch_no,product_id,quantity_received) VALUES(?,?,?); ";
         Connection conn = DbHandler.getConnection();
