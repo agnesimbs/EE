@@ -31,22 +31,7 @@
   width: 100%;
   }}
 
-    /*STYLING TABLE*/
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
 
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
     </style>
 </head>
 <body>
@@ -67,7 +52,7 @@
   </div>
   <div class="column" style="background-color:#bbb;">
 
-    <c:if test="${products!= null}">
+   <%-- <c:if test="${products!= null}">
       <table>
         <tr>
           <th>Name</th>
@@ -84,8 +69,9 @@
         </c:forEach>
 
       </table>
-    </c:if>
-
+    </c:if>--%>
+     <c:import var="data" url="viewProduct.jsp"/>
+     <c:out value="${data}"/>
 
   </div>
 </div>

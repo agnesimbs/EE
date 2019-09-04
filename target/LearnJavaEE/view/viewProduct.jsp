@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<html>
+<!--<html>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,11 +10,11 @@
 
     </style>
 </head>
-<body>
+<body>-->
 <c:if test="${products!= null}">
- <table>
-       <tr>
         <th>Name</th>
+    <table>
+        <tr>
         <th>Description</th>
 
     </tr>
@@ -52,5 +52,5 @@
     </tr>--%>
 </table>
 </c:if>
-</body>
-</html>
+<!--</body>
+</html>-->

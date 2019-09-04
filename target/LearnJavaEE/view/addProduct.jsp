@@ -67,7 +67,7 @@
   </div>
   <div class="column" style="background-color:#bbb;">
 
-    <c:if test="${products!= null}">
+   <%-- <c:if test="${products!= null}">
       <table>
         <tr>
           <th>Name</th>
@@ -84,8 +84,9 @@
         </c:forEach>
 
       </table>
-    </c:if>
-
+    </c:if>--%>
+     <c:import var="data" url="viewProduct.jsp"/>
+     <c:out value="${data}"/>
 
   </div>
 </div>
