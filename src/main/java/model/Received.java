@@ -23,6 +23,11 @@ public class Received {
 
     }
 
+    public Received(int batchno, int quantityReceived) {
+        this.batch_no=batch_no;
+        this.quantityReceived=quantityReceived;
+    }
+
     public double getBuyingPrice() {
         return buyingPrice;
     }

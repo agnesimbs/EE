@@ -18,6 +18,11 @@ public class Sale {
 
     }
 
+    public Sale(int sellingPrice, int quantity) {
+        this.quantity=quantity;
+        this.selling_price=selling_price;
+    }
+
     public int getId() {
         return id;
     }

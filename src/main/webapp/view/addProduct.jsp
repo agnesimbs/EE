@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title></title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">j
   <style>
   * {
   box-sizing: border-box;
@@ -31,6 +31,22 @@
   width: 100%;
   }}
 
+  /*STYLING TABLE*/
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 
     </style>
 </head>

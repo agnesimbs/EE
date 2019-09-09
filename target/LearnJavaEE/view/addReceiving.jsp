@@ -56,7 +56,7 @@
 <h3> Form</h3>
 
 <div >
-    <form action="">
+    <form action="addReceiving"method="post">
         <label for="batchno">BatchNumber</label>
         <select id="batchno" name="batchno">
             <!--<option value="australia">Australia</option>
@@ -64,7 +64,7 @@
             <option value="usa">USA</option>-->
         </select>
         <label for="quantity">Quantity</label>
-        <input type="quantity" id="quantity" name="quantity">
+        <input type="text" id="quantity" name="quantity">
         <label for="buyingprice">BuyingPrice</label>
         <input type="text" id="buyingprice" name="buyingprice">
         <label for="sellingprice">SellingPrice</label>

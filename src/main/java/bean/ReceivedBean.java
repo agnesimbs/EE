@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ReceivedBean implements BeanInterface{
     public Boolean addReceiving(Received received) throws SQLException {
@@ -46,12 +47,18 @@ public class ReceivedBean implements BeanInterface{
 */return received;
 
     }
+    public ArrayList<Received> getReceivings() throws SQLException {
+        String query = "SELECT * FROM received";
+        ResultSet rs = DbHandler.readFromDb(query);
+        ArrayList<Received> receivingList = new ArrayList<>();
+        while (rs.next()) {
+            Received receiving = new Received( rs.getInt("batch_no"), rs.getInt("quantityReceived"));
+            receivingList.add(receiving);
 
+        }
+        return receivingList;
 
-
-
-
-
+    }
 
 
     @Override
